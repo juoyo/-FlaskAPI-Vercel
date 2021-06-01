@@ -1,5 +1,6 @@
 {
   "version": 2,
+
   "builds": [
     {
       "src": "./index.py",
@@ -10,6 +11,14 @@
       "use": "@vercel/static"
     }
   ],
+
+  "rewrites": [
+      {
+          "source": "/api/(.*)",
+          "destination": "/api/api.py"
+      }
+    ],
+
   "routes": [
     {
       "src": "/ui",
@@ -33,7 +42,7 @@
     },
     {
       "src": "/about",
-      "dest": "/about/"
+      "dest": "index"
     },
     {
       "src": "/(.+)",
