@@ -15,15 +15,15 @@
   "rewrites": [
       {
           "source": "/(.*)",
-          "destination": "/index"
+          "destination": "/ui/index.html"
       },
       {
           "source": "/test",
-          "destination": "/test"
+          "destination": "/ui/test.html"
       },
       {
           "source": "/api",
-          "destination": "/index.py"
+          "destination": "/index"
       }
     ]
 }
