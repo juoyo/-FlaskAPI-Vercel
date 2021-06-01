@@ -32,6 +32,10 @@
       "dest": "ui/index.html"
     },
     {
+      "src": "/about",
+      "dest": "/about/"
+    },
+    {
       "src": "/(.+)",
       "dest": "ui/$1"
     }
