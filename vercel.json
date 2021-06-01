@@ -18,8 +18,12 @@
           "destination": "/index"
       },
       {
-          "source": "/api/(.*)",
-          "destination": "/api/api.py"
+          "source": "/test",
+          "destination": "/test"
+      },
+      {
+          "source": "/api",
+          "destination": "/index.py"
       }
     ]
 }
