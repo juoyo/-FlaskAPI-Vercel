@@ -1,0 +1,7 @@
+.vercel
+node_modules
+
+lib
+_pycache_
+
+venv
