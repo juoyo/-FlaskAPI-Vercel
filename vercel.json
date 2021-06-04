@@ -3,7 +3,7 @@
 
   "builds": [
     {
-      "src": "flapi/*.py",
+      "src": "api/*.py",
       "use": "@vercel/python"
     },
     {
@@ -26,8 +26,8 @@
           "destination": "/template/test.html"
       },
       {
-          "source": "/flapi",
-          "destination": "/flapi/flapi.py"
+          "source": "/api",
+          "destination": "/api/flapi.py"
       },
       {
           "source": "/(.*)",
