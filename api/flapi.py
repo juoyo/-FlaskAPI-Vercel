@@ -2,11 +2,11 @@ from flask import Flask, Response, request, redirect, url_for
 
 app = Flask(__name__)
 
-@app.route('/success/<name>')
+@app.route('api/success/<name>')
 def success(name):
    return 'welcome %s' % name
 
-@app.route('/login',methods = ['POST', 'GET'])
+@app.route('api/login',methods = ['POST', 'GET'])
 def login():
    if request.method == 'POST':
       user = request.form['nm']
@@ -15,7 +15,7 @@ def login():
       user = request.args.get('nm')
       return redirect(url_for('success',name = user))
 
-@app.route('/index/')
+@app.route('api/index/')
 def home():
   return 'Home Page Route!!'
 

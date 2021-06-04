@@ -2,7 +2,6 @@
   "version": 2,
 
 
-
   "rewrites": [
       {
           "source": "/",
@@ -17,7 +16,7 @@
           "destination": "/template/test.html"
       },
       {
-          "source": "/api",
+          "source": "/api(.*)",
           "destination": "/api/flapi.py"
       },
       {
