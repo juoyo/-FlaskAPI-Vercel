@@ -15,11 +15,11 @@ def login():
       user = request.args.get('nm')
       return redirect(url_for('success',name = user))
 
-@app.route('/api/index/')
+@app.route('/api/index')
 def home():
   return 'Home Page Route!!'
 
-@app.route('/api/about/')
+@app.route('/api/about')
 def about():
   return 'About Page Route'
 
