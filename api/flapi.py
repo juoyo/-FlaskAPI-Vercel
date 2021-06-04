@@ -19,19 +19,19 @@ def login():
 def home():
   return 'Home Page Route!!'
 
-@app.route('/about/')
+@app.route('/api/about/')
 def about():
   return 'About Page Route'
 
-@app.route('/portfolio')
+@app.route('/api/portfolio')
 def portfolio():
   return 'Portfolio Page Route'
 
-@app.route('/contact')
+@app.route('/api/contact')
 def contact():
   return 'Contact Page Route'
 
-@app.route('/status')
+@app.route('/api/status')
 def api():
   with open('../data.json', mode='r') as my_file:
     text = my_file.read()
