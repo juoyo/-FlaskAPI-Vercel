@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-  return 'Home Page Route - nice work Andrew!!!'
+  return 'Home Page Route!'
 
 @app.route('/about')
 def about():
@@ -23,3 +23,7 @@ def api():
   with open('../data.json', mode='r') as my_file:
     text = my_file.read()
     return text
+
+  
+if __name__ == "__main__":
+    app.run(debug = True)
