@@ -18,7 +18,7 @@ def portfolio():
 def contact():
   return 'Contact Page Route'
 
-@app.route('/api/status')
+@app.route('/status')
 def api():
   with open('../data.json', mode='r') as my_file:
     text = my_file.read()
