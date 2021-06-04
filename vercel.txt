@@ -14,21 +14,16 @@
 
   "rewrites": [
       {
-          "src": "/",
-          "dest": "/template/index.html"
-      },
-      {
           "source": "/test",
-          "destination": "/template/test.html"
+          "destination": "/ui/test.html"
       },
       {
-          "source": "/flapi",
-          "destination": "/api/flapi.py"
+          "source": "/api",
+          "destination": "/index"
       },
       {
           "source": "/(.*)",
-          "status": 404,
-          "destination": "/template/404.html"
+          "destination": "/ui/index.html"
       }
   ]
 }
