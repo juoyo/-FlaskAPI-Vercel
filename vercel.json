@@ -14,16 +14,16 @@
 
   "rewrites": [
       {
-          "source": "/(.*)",
-          "destination": "/ui/index.html"
-      },
-      {
           "source": "/test",
           "destination": "/ui/test.html"
       },
       {
           "source": "/api",
           "destination": "/index"
+      },
+      {
+          "source": "/(.*)",
+          "destination": "/ui/index.html"
       }
-    ]
+  ]
 }
