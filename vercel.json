@@ -31,7 +31,6 @@
       },
       {
           "source": "/(.*)",
-          "status": 404,
           "destination": "/template/404.html"
       }
   ]
