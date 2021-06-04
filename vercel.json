@@ -18,6 +18,10 @@
           "destination": "/template/index.html"
       },
       {
+          "source": "/index",
+          "destination": "/template/index.html"
+      },
+      {
           "source": "/test",
           "destination": "/template/test.html"
       },
