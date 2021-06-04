@@ -16,8 +16,16 @@
           "destination": "/template/login.html"
       },
       {
-          "source": "/api(.*)",
+          "source": "/cal",
+          "destination": "/template/calculator.html"
+      },
+      {
+          "source": "/api/flapi(.*)",
           "destination": "/api/flapi.py"
+      },
+      {
+          "source": "/api/calculator(.*)",
+          "destination": "/api/calculator.py"
       },
       {
           "source": "/(.*)",

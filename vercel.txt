@@ -1,29 +1,31 @@
 {
   "version": 2,
 
-  "builds": [
-    {
-      "src": "api/*.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "template/**",
-      "use": "@vercel/static"
-    }
-  ],
 
   "rewrites": [
       {
-          "source": "/test",
-          "destination": "/ui/test.html"
+          "source": "/",
+          "destination": "/template/index.html"
       },
       {
-          "source": "/api",
-          "destination": "/index"
+          "source": "/index",
+          "destination": "/template/index.html"
+      },
+      {
+          "source": "/login",
+          "destination": "/template/login.html"
+      },
+      {
+          "source": "/cal",
+          "destination": "/template/calculator.html"
+      },
+      {
+          "source": "/api(.*)",
+          "destination": "/api/flapi.py"
       },
       {
           "source": "/(.*)",
-          "destination": "/ui/index.html"
+          "destination": "/template/404.html"
       }
   ]
 }
