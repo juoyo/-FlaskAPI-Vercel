@@ -12,8 +12,8 @@
           "destination": "/template/index.html"
       },
       {
-          "source": "/test",
-          "destination": "/template/test.html"
+          "source": "/login",
+          "destination": "/template/login.html"
       },
       {
           "source": "/api(.*)",
