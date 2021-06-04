@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac1ddf79-10d5-40b8-b33b-61b35ab3d1e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vercel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

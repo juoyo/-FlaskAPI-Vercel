@@ -1,2 +1,2 @@
 flask==1.0.2
-sympy==1.6.3
+sympy==1.8
