@@ -1,8 +1,21 @@
-from flask import Flask, Response, request
+from flask import Flask, Response, request, redirect, url_for
 
 app = Flask(__name__)
 
-@app.route('/index')
+@app.route('/success/<name>')
+def success(name):
+   return 'welcome %s' % name
+
+@app.route('/login',methods = ['POST', 'GET'])
+def login():
+   if request.method == 'POST':
+      user = request.form['nm']
+      return redirect(url_for('success',name = user))
+   else:
+      user = request.args.get('nm')
+      return redirect(url_for('success',name = user))
+
+@app.route('/index/')
 def home():
   return 'Home Page Route!!'
 
@@ -13,7 +26,7 @@ def catch_all(path):
   key = request.args.get('key')
   return Response("<h1>Flask</h1><p>You visited: /%s</p><p>key=%s</p>" % (path, key), mimetype="text/html")
 
-@app.route('/about')
+@app.route('/about/')
 def about():
   return 'About Page Route'
 
