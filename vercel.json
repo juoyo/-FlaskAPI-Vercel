@@ -16,6 +16,10 @@
           "destination": "/template/login.html"
       },
       {
+        "source": "/scal",
+        "destination": "/template/calculator/index.html"
+      },
+      {
           "source": "/cal",
           "destination": "/template/calculator.html"
       },
