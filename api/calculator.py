@@ -12,7 +12,7 @@ def login():
   else:
       cal_para1 = request.args.get('cal_para1')
 
-  result = eval(cal_para1)
+  result = str(eval(cal_para1))
   return  result
 
 
